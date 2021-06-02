@@ -1,0 +1,18 @@
+[
+  {
+    "type": "carbs",
+    "ammount": 100
+  },
+  {
+    "type": "proteine",
+    "ammount": 40
+  },
+  {
+    "type": "glucide",
+    "ammount": 5
+  },
+  {
+    "type": "vitamina C",
+    "ammount": 300
+  }
+]

@@ -12,6 +12,8 @@ const HomePage = () =>{
             <hr/>
             <br/><br/>
             <IMC/>
+            <br/>
+            <br/>
         </div>
     )
 };

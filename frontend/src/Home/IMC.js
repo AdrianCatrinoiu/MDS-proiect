@@ -20,13 +20,16 @@ const IMC = () => {
     const [masa,setMasa] = useState(0);
     const [inaltime,setInaltime] = useState(0); 
     const [valoare,setValoare] = useState(0);
+    const [afisare,setAfisare] = useState(false);
 
     function showIMC(){
         if (inaltime != null && masa != null){
                 let h = inaltime / 100;
                 console.log(h,h*h,masa);
-                if (h > 0 && masa > 0)
+                if (h > 0 && masa > 0){
                     setValoare(masa / (h * h));
+                    setAfisare(true);
+                }
             }
         }
     
@@ -34,13 +37,13 @@ const IMC = () => {
     function modifyStare(event){
         const val = event.target.value;
         const name = event.target.name;
+        console.log(val);
         if (Number.parseInt(val)){
             const value = Number.parseInt(val);
             if (name == "m")
                 setMasa(value);
             if (name == "h")
                 setInaltime(value);
-            showIMC();
         }
     
     }
@@ -73,8 +76,24 @@ const IMC = () => {
                 <br/>
                 <div className = "afis" onPress = {modifyStare}>
                     {
+                        afisare ?
                         <AfisareFrumoasa  val = {parseFloat(valoare).toFixed(2)}/>
+                        : 
+                        <AfisareFrumoasa val = "Nu avem inca informatii."/>
                     }
+
+                    <div id = "SpecialEdit">
+                        <div></div>
+
+                        <div style = {{width : "30%", borderRadius : "20%", background : "white", border: "1px solid black"}}>
+                            <button onClick = {showIMC}>
+                                Arata-mi imc-ul
+                            </button>
+                        </div>
+
+                        <div></div>
+                    </div>
+
                 </div>
             </div>
 

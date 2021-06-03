@@ -1,5 +1,7 @@
 import React, { useState,useEffect } from "react";
-import "./IMC.css"
+import "./IMC.css";
+import imc from "./IMC.png";
+import beHealthy from "./BeHealty.bmp";
 
 const AfisareFrumoasa = (props) => {
     return (
@@ -93,8 +95,31 @@ const IMC = () => {
 
                         <div></div>
                     </div>
+                    <div className = "SaAfisamFrumosIMC">
+                        <div style = {{ width : "35%"}}>
+                            <br/>
+                            <img src = {beHealthy} alt = "Be Healthy"
+                                style = {{borderRadius : "100%"}}
+                            />
+                            <br/>
+                        </div>
+                        <div>
 
+                            <br/>
+                            <img src = {imc} alt = "POZA IMC"/>
+                            <br/>
+
+                        </div>
+                        <div style = {{ width : "35%"}}>
+                            <br/>
+                            <img src = {beHealthy} alt = "Be Healthy"
+                                style = {{borderRadius : "100%"}}
+                            />
+                            <br/>
+                        </div>
+                    </div>
                 </div>
+               
             </div>
 
             <div></div>

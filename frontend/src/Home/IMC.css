@@ -66,3 +66,14 @@ button{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.SaAfisamFrumosIMC{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.SaAfisamFrumosIMC img{
+    width: 100%;
+}

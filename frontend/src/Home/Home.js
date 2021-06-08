@@ -6,10 +6,6 @@ const HomePage = () =>{
 
     return (
         <div>
-            <h1>
-                Bine ai venit!
-            </h1>
-            <hr/>
             <br/><br/>
             <IMC/>
             <br/>

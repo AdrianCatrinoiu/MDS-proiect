@@ -6,7 +6,7 @@ import beHealthy from "./BeHealty.bmp";
 const AfisareFrumoasa = (props) => {
     return (
         <div className = "afisareFrumoasa">
-            <div><p>IMC tau este:</p><br/></div>
+            <div><p>Your IMC:</p><br/></div>
             <div className = "deAccentuat">
                 <div> </div>
                 <div className = "interiorImportant">{props.val}</div>
@@ -64,11 +64,11 @@ const IMC = () => {
             <div className = "ComponentaDominanta">
                 <br/><br/>
                 <form class = "afis">
-                    <label for ="m"> Masa in kg:</label><br/>
+                    <label for ="m"> Weight in kg:</label><br/>
                     <input type = "text" name ="m" id = "mIMC"
                     onChange = {modifyStare}
                     /><br/>
-                    <label for ="h"> Inaltime in cm:</label><br/>
+                    <label for ="h"> Height in cm:</label><br/>
                     <input type = "text" name ="h" id = "hIMC"
                         onChange = {modifyStare}
                     /><br/>
@@ -81,7 +81,7 @@ const IMC = () => {
                         afisare ?
                         <AfisareFrumoasa  val = {parseFloat(valoare).toFixed(2)}/>
                         : 
-                        <AfisareFrumoasa val = "Nu avem inca informatii."/>
+                        <AfisareFrumoasa val = "No values to do imc."/>
                     }
 
                     <div id = "SpecialEdit">
@@ -89,7 +89,7 @@ const IMC = () => {
 
                         <div style = {{width : "30%", borderRadius : "20%", background : "white", border: "1px solid black"}}>
                             <button onClick = {showIMC}>
-                                Arata-mi imc-ul
+                                Compute Imc
                             </button>
                         </div>
 
@@ -106,7 +106,7 @@ const IMC = () => {
                         <div>
 
                             <br/>
-                            <img src = {imc} alt = "POZA IMC"/>
+                            <img src = {imc} alt = "Image IMC"/>
                             <br/>
 
                         </div>

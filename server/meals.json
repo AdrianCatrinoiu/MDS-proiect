@@ -1,18 +1,56 @@
 [
   {
     "type": "carbs",
-    "ammount": 100
+    "ammount": 100,
+    "ingredients": [
+      {
+        "nume": "Cartofi",
+        "gramaj": 150
+      },
+      {
+        "nume": "Rosii",
+        "gramaj": 50
+      },
+      {
+        "nume": "Paine",
+        "gramaj": 100
+      }
+    ]
   },
   {
     "type": "proteine",
-    "ammount": 40
+    "ammount": 40,
+    "ingredients": [
+      {
+        "nume": "Paste",
+        "gramaj": 150
+      },
+      {
+        "nume": "Salam",
+        "gramaj": 50
+      },
+      {
+        "nume": "Paine",
+        "gramaj": 100
+      }
+    ]
   },
   {
     "type": "glucide",
-    "ammount": 5
-  },
-  {
-    "type": "vitamina C",
-    "ammount": 300
+    "ammount": 5,
+    "ingredients": [
+      {
+        "nume": "Zahar",
+        "gramaj": 15
+      },
+      {
+        "nume": "Faina",
+        "gramaj": 150
+      },
+      {
+        "nume": "Cacao",
+        "gramaj": 10
+      }
+    ]
   }
 ]

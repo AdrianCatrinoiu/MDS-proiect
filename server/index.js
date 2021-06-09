@@ -1,6 +1,7 @@
 // server/index.js
 const path = require("path");
 const express = require("express");
+const cors = require("cors");
 const usersDB = require("./users.json");
 const workoutsDB = require("./workouts.json");
 const mealsDB = require("./meals.json");
@@ -8,6 +9,8 @@ const PORT = process.env.PORT || 3001;
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const app = express();
+app.use(cors());
+
 app.use(
   bodyParser.urlencoded({
     extended: true,
@@ -18,11 +21,11 @@ app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, "../frontend/build")));
 
 // Handle GET requests to /api route
-app.get("/api", (req, res) => {
+app.use("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
-app.post("/login", (req, res) => {
+app.use("/login", (req, res) => {
   const data = req.body;
   let response = {
     status: "ERROR",
@@ -41,18 +44,19 @@ app.post("/login", (req, res) => {
   res.status(200).json(response);
 });
 
-app.post("/register", (req, res) => {
+app.use("/register", (req, res) => {
   const data = req.body;
   let response = {
     status: "ERROR",
     message: "Register error",
   };
-  const { username, password } = data;
+  const { username, password, email } = data;
   let meals = mealsDB;
   let workouts = workoutsDB;
   let newUser = {
     username: username,
     password: password,
+    email: email,
     workouts: workouts,
     meals: meals,
   };

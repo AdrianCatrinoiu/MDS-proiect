@@ -1,0 +1,79 @@
+.afis{
+    width:100%;
+    border-radius: 20%;
+    border : 1px solid black; 
+    text-align:center; 
+    background: rgb(104, 205, 245); 
+    font: Arial 20px;
+    color: white;
+}
+
+.afis > label {
+    color : white;
+}
+
+input{
+    text-align: center;
+}
+
+.afisareFrumoasa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 30%;
+    border-bottom : 0.5px solid black; 
+    font: Arial 42px;
+    color: white;   
+    text-align: center;
+}
+
+.afisareFrumoasa p{
+    font-size: 20px;
+}
+
+.afisareFrumoasa .deAccentuat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.interiorImportant{
+    background-color: white;
+    color:black;
+    border: 0.1px solid black;
+    width: 20%;
+}
+
+.deCentratChenarele{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ComponentaDominanta{
+    width:70%;
+}
+
+button{
+    width:20%;
+    border-radius: 20%;
+}
+
+#SpecialEdit{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.SaAfisamFrumosIMC{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.SaAfisamFrumosIMC img{
+    width: 100%;
+}

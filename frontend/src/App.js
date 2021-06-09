@@ -1,23 +1,39 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
+import { TextField, MenuItem } from "@material-ui/core";
+import BmiDropdown from "./components/Dropdown/bmidropdown";
 
 function App() {
-  const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  const [day, setDay] = useState("");
+
+  // Alegem ziua
+  const changeDay = (e) => setDay(e.target.value)
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-        <p>Hello from the other side</p>
-      </header>
+
+      <h1>BMI Planner</h1>
+
+      {/* Facem menu pentru alegerea workout-ului */}
+
+      <div style = {{margin: 10}}>
+    <TextField
+      select
+      onChange={changeDay}
+      value={day}
+      helperText="Ce zi alegi?"
+    >
+      <MenuItem onChange={changeDay} value="Lower Body">
+        Lower Body
+      </MenuItem>
+      <MenuItem onChange={changeDay} value="Upper Body">
+        Upper Body
+      </MenuItem>
+    </TextField>
+    </div>
+
+    <BmiDropdown day={day} />
     </div>
   );
 }

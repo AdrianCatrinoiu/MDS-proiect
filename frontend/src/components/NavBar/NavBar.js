@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import Diete from "./../diete/Diete";
 import IMC from "./../IMC/IMC";
+import Workouts from "./../Workouts/Workouts"
 import "./NavBar.css";
 export default function NavBar({ diete2 }) {
   return (
@@ -19,16 +20,24 @@ export default function NavBar({ diete2 }) {
             </Link>
           </div>
           <div>
-            <Link to="/diete" className="linkBtn">
+            <Link to="/diets" className="linkBtn">
               Diets
+            </Link>
+          </div>
+          <div>
+            <Link to="/workouts" className="linkBtn">
+              Workouts
             </Link>
           </div>
         </nav>
         <hr></hr>
 
         <Switch>
-          <Route path="/diete">
+          <Route path="/diets">
             <Diete diete={diete2} />
+          </Route>
+          <Route path="/workouts">
+            <Workouts />
           </Route>
           <Route path="/imc">
             <IMC />

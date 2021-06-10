@@ -4,6 +4,8 @@ import Diete from "./../diete/Diete";
 import IMC from "./../IMC/IMC";
 import Workouts from "./../Workouts/Workouts"
 import "./NavBar.css";
+import Home from './../Home/Home';
+
 export default function NavBar({ diete2 }) {
   return (
     <div>
@@ -43,10 +45,7 @@ export default function NavBar({ diete2 }) {
             <IMC />
           </Route>
           <Route path="/">
-            <div>
-              <p>Homepage</p>
-              <p>Insert cool animation here</p>
-            </div>
+            <Home/>
           </Route>
         </Switch>
       </BrowserRouter>

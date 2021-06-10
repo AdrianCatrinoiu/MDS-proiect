@@ -10,7 +10,6 @@ import poza2 from "./components/dieta2.jpg";
 import poza3 from "./components/dieta3.jpg";
 import poza4 from "./components/dieta4.jpg";
 import poza5 from "./components/dieta5.jpg";
-
 const diete2 = [
   {
     type: "Chicken & Veggie Stir-Fry",
@@ -105,23 +104,10 @@ const diete2 = [
       },
       {
         nume: " carrots",
-        gramaj: 2,
-      },
-      {
-        nume: " cups whole wheat flour",
-        gramaj: 2,
-      },
-      {
-        nume: " teaspoons baking powder",
-        gramaj: 2,
-      },
-      {
-        nume: " teaspoons ground cinnamon",
-        gramaj: 1.5,
       },
     ],
     preparation:
-      " Preheat oven to 350°F (175°C). In a large bowl, whisk the eggs until light and fluffy. Add in the Greek yogurt and whisk again until the mixture is smooth and fluffy. Pour in the maple syrup, milk, and vanilla extract. Beat the mixture again until smooth. Add the shredded carrots, whole wheat flour, baking powder, and cinnamon over the wet ingredients. Using a rubber spatula, fold the wet and dry ingredients together just until combined. Using a medium ice cream scoop, portion the batter into a greased 12-cup muffin tin. Bake for 20 minutes, until the muffins have risen and set. For the frosting, beat the cream cheese in a small bowl until smooth. Add in the maple syrup and vanilla and beat again until the mixture is well combined. Once the muffins have cooled, use a small ice cream scoop to spoon a bit of the frosting on top of the muffins. Gently tap the muffins on the counter to smooth out the layer of frosting on top. ",
+      " Preheat oven to 350°F (175°C). In a large bowl, whisk the eggs until light and fluffy. Add in the Greek yogurt and whisk again until the mixture is smooth and fluffy. Pour in the maple syrup, milk, and vanilla extract. Beat the mixture again until smooth. Add the shredded carrots, whole wheat flour, baking powder, and cinnamon over the wet ingredients. Using a rubber spatula, fold the wet and dry ingredients together just until combined. ",
     picture: <img src={poza4} alt="Dieta 4" />,
   },
   {
@@ -159,10 +145,6 @@ const diete2 = [
       {
         nume: " cup frozen peas",
         gramaj: 0.5,
-      },
-      {
-        nume: " tablespoons low sodium ",
-        gramaj: 3,
       },
     ],
     preparation:

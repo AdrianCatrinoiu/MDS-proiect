@@ -10,7 +10,7 @@ export default function Workouts() {
 
   return (
     <div className="App">
-      <h1>BMI Planner</h1>
+      <h1>Workout Planner</h1>
 
       {/* Facem menu pentru alegerea workout-ului */}
 
@@ -19,7 +19,7 @@ export default function Workouts() {
           select
           onChange={changeDay}
           value={day}
-          helperText="Ce zi alegi?"
+          helperText="Muscle group"
         >
           <MenuItem onChange={changeDay} value="Lower Body">
             Lower Body

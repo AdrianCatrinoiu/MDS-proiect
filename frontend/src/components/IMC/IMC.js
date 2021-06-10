@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./IMC.css";
-import imc from "./IMC.png";
-import beHealthy from "./BeHealty.bmp";
+import TableBMI from './../TableBMI/TableBMI';
 
 const AfisareFrumoasa = (props) => {
   return (
     <div className="afisareFrumoasa">
       <div>
-        <p>Your IMC:</p>
+        <h2>Your IMC:</h2>
         <br />
       </div>
       <div className="deAccentuat">
@@ -16,7 +15,6 @@ const AfisareFrumoasa = (props) => {
         <div> </div>
       </div>
       <div>
-        {" "}
         <br />
       </div>
     </div>
@@ -65,6 +63,7 @@ const IMC = () => {
         <br />
         <br />
         <form class="afis">
+          <br></br>
           <label for="m"> Weight in kg:</label>
           <br />
           <input type="text" name="m" id="mIMC" onChange={modifyStare} />
@@ -74,7 +73,8 @@ const IMC = () => {
           <input type="text" name="h" id="hIMC" onChange={modifyStare} />
           <br />
           <br />
-          <button onClick={resetData}>reset</button>
+          <button onClick={resetData} className = "btn">reset</button>
+          <p></p>
         </form>
         <br />
         <div className="afis" onPress={modifyStare}>
@@ -90,39 +90,27 @@ const IMC = () => {
             <div
               style={{
                 width: "30%",
-                borderRadius: "20%",
-                background: "white",
-                border: "1px solid black",
+                borderRadius: "20%"
               }}
             >
-              <button onClick={showIMC}>Compute Imc</button>
+              <button onClick={showIMC} className = "btn">Compute Imc</button>
             </div>
 
             <div></div>
           </div>
           <div className="SaAfisamFrumosIMC">
             <div style={{ width: "35%" }}>
-              <br />
-              <img
-                src={beHealthy}
-                alt="Be Healthy"
-                style={{ borderRadius: "100%" }}
-              />
-              <br />
+              
             </div>
             <div>
               <br />
-              <img src={imc} alt="Placeholder IMC" />
+              
               <br />
             </div>
             <div style={{ width: "35%" }}>
-              <br />
-              <img
-                src={beHealthy}
-                alt="Be Healthy"
-                style={{ borderRadius: "100%" }}
-              />
-              <br />
+              <br></br>
+            <TableBMI />
+            <br></br>
             </div>
           </div>
         </div>

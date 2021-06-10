@@ -12,5 +12,5 @@ export default function Diete({ diete }) {
       poza={dieta.picture}
     />
   ));
-  return <ul>{listDiete}</ul>;
+  return <div>{listDiete}</div>;
 }

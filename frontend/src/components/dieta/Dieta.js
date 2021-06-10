@@ -9,24 +9,28 @@ export default function Dieta({
   poza,
 }) {
   const ingrediente = ingredienteList.map((ingredient) => (
-    <div>
-      <p>Ingredient:{ingredient.nume}</p>
-      <p>Quantity:{ingredient.gramaj}</p>
-    </div>
+      <p>{ingredient.nume} : {ingredient.gramaj} (quantity)</p>
   ));
   return (
     <div className="DesignDieta">
-      <li>
-        <br></br>
-        <p id="id1">{nume}</p>
-        <p id="id3">Calories: {value}</p>
-        <p id="id2">Preparation:</p>
-        <p>{pregatire}</p>
-        <p id="id4">Enjoy!</p>
-        <p>{poza}</p>
-        <ul>{ingrediente}</ul>
-      </li>
-      <hr></hr>
+        <h1 className="id1">{nume}</h1>
+        <h2 >Calories: {value}</h2>
+        <hr/>
+        <div className = "editDieta">
+          <div className  = "zonaPozaDieta" >
+              <div></div>
+              <div>
+                  {poza}
+              </div>
+              <div></div>
+          </div>
+          <div style = {{width  : "40%"}}>
+            <p >Preparation:</p>
+            <p>{pregatire}</p>
+            <p >Ingredients: </p>
+            <ul>{ingrediente}</ul>
+          </div>
+      </div>
     </div>
   );
 }

@@ -24,22 +24,6 @@ function BmiDropdown({ day }) {
 
   return (
     <>
-      <div style={{ marginBottom: 20 }}>
-        <TextField
-          select
-          onChange={changeBmi}
-          value={bmiRange}
-          helperText="Alegeti BMI-ul calculat"
-        >
-          {workout.BmiPlanner.map((bmi) => {
-            return (
-              <MenuItem onChange={changeBmi} value={bmi.range}>
-                {bmi.range}
-              </MenuItem>
-            );
-          })}
-        </TextField>
-      </div>
       <div>
         <WorkoutTable day={day} bmiRange={bmiRange} bmiName={bmiName} />
       </div>

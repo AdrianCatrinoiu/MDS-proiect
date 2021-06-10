@@ -65,39 +65,31 @@ const thisPhaseRange = getPhaseRange();
 
 return (
     <Container>
-        {day && bmiRange ? (
+        {day  ? (
             <>
-                <Typography variant ="h4">
-                    Axeaza-te pe asta : {thisPhaseName}
-                </Typography>
                 <TableContainer component={Paper}>
                     <Table>
                         <TableHead>
                             <TableRow>
-                                <TableCell style={{ fontWeight: "bold" }}>Exercitiu</TableCell>
-                                <TableCell style={{ fontWeight: "bold"}}>
-                                    Target Bmi
-                                </TableCell>
+                                <TableCell style={{ fontWeight: "bold" }}>Exercise</TableCell>
                                 <TableCell style={{ fontWeight: "Bold"}}>
-                                    Seturi X Reprize
+                                    Sets X Reps
                                 </TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             <TableRow>
                                 <TableCell>{mainLift}</TableCell>
-                                <TableCell>{thisPhaseRange}</TableCell>
                                 <TableCell>
                                     3 X N/A
                                     <br />
-                                    Ne oprim cand simtim ca nu mai da rezultate
+                                    Till failure
                                 </TableCell>
                             </TableRow>
                             {exercises.map((exercise) => {
                                 return (
                                     <TableRow>
                                         <TableCell>{exercise.name}</TableCell>
-                                        <TableCell>N/A</TableCell>
                                         <TableCell>{exercise.reprize}</TableCell>
                                     </TableRow>
                                 );
@@ -108,7 +100,7 @@ return (
             </>
         ) : (
            <Typography variant="h3" style={{ marginTop: 80 }}>
-               Va rog selectati Tipul de Zi si BMI-ul pe care l-ati calculat anterior
+               Select your muscle group for today
            </Typography>
         )}
     </Container>

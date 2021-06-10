@@ -10,7 +10,6 @@ import poza2 from "./components/dieta2.jpg";
 import poza3 from "./components/dieta3.jpg";
 import poza4 from "./components/dieta4.jpg";
 import poza5 from "./components/dieta5.jpg";
-
 const diete2 = [
   {
     type: "Chicken & Veggie Stir-Fry",

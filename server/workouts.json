@@ -1,0 +1,22 @@
+[
+  {
+    "muscle-group": "biceps",
+    "duration": 30,
+    "intensity": "easy"
+  },
+  {
+    "muscle-group": "triceps",
+    "duration": 30,
+    "intensity": "easy"
+  },
+  {
+    "muscle-group": "deltoizi",
+    "duration": 20,
+    "intensity": "medium"
+  },
+  {
+    "muscle-group": "pectorali",
+    "duration": 40,
+    "intensity": "medium"
+  }
+]

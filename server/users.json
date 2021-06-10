@@ -1,0 +1,132 @@
+[
+  {
+    "username": "user",
+    "password": "Abc123.",
+    "workouts": null,
+    "meals": null
+  },
+  {
+    "username": "admin",
+    "password": "Abc123.",
+    "workouts": null,
+    "meals": null
+  },
+  {
+    "username": "user2",
+    "password": "Abcd123!",
+    "workouts": null,
+    "meals": null
+  },
+  {
+    "username": "user3",
+    "password": "Abcd123!",
+    "workouts": [
+      { "muscle-group": "biceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "triceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "deltoizi", "duration": 20, "intensity": "medium" },
+      { "muscle-group": "pectorali", "duration": 40, "intensity": "medium" }
+    ],
+    "meals": [
+      { "type": "carbs", "ammount": 100 },
+      { "type": "proteine", "ammount": 40 },
+      { "type": "glucide", "ammount": 5 },
+      { "type": "vitamina C", "ammount": 300 }
+    ]
+  },
+  {
+    "username": "user4",
+    "password": "Abcd123!",
+    "workouts": [
+      { "muscle-group": "biceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "triceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "deltoizi", "duration": 20, "intensity": "medium" },
+      { "muscle-group": "pectorali", "duration": 40, "intensity": "medium" }
+    ],
+    "meals": [
+      { "type": "carbs", "ammount": 100 },
+      { "type": "proteine", "ammount": 40 },
+      { "type": "glucide", "ammount": 5 },
+      { "type": "vitamina C", "ammount": 300 }
+    ]
+  },
+  {
+    "username": "user21",
+    "password": "Abc123..",
+    "email": "mail@mail.com",
+    "workouts": [
+      { "muscle-group": "biceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "triceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "deltoizi", "duration": 20, "intensity": "medium" },
+      { "muscle-group": "pectorali", "duration": 40, "intensity": "medium" }
+    ],
+    "meals": [
+      {
+        "type": "carbs",
+        "ammount": 100,
+        "ingredients": [
+          { "nume": "Cartofi", "gramaj": 150 },
+          { "nume": "Rosii", "gramaj": 50 },
+          { "nume": "Paine", "gramaj": 100 }
+        ]
+      },
+      {
+        "type": "proteine",
+        "ammount": 40,
+        "ingredients": [
+          { "nume": "Paste", "gramaj": 150 },
+          { "nume": "Salam", "gramaj": 50 },
+          { "nume": "Paine", "gramaj": 100 }
+        ]
+      },
+      {
+        "type": "glucide",
+        "ammount": 5,
+        "ingredients": [
+          { "nume": "Zahar", "gramaj": 15 },
+          { "nume": "Faina", "gramaj": 150 },
+          { "nume": "Cacao", "gramaj": 10 }
+        ]
+      }
+    ]
+  },
+  {
+    "username": "user232323",
+    "password": "Abc123..",
+    "email": "mail@mail2.com",
+    "workouts": [
+      { "muscle-group": "biceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "triceps", "duration": 30, "intensity": "easy" },
+      { "muscle-group": "deltoizi", "duration": 20, "intensity": "medium" },
+      { "muscle-group": "pectorali", "duration": 40, "intensity": "medium" }
+    ],
+    "meals": [
+      {
+        "type": "carbs",
+        "ammount": 100,
+        "ingredients": [
+          { "nume": "Cartofi", "gramaj": 150 },
+          { "nume": "Rosii", "gramaj": 50 },
+          { "nume": "Paine", "gramaj": 100 }
+        ]
+      },
+      {
+        "type": "proteine",
+        "ammount": 40,
+        "ingredients": [
+          { "nume": "Paste", "gramaj": 150 },
+          { "nume": "Salam", "gramaj": 50 },
+          { "nume": "Paine", "gramaj": 100 }
+        ]
+      },
+      {
+        "type": "glucide",
+        "ammount": 5,
+        "ingredients": [
+          { "nume": "Zahar", "gramaj": 15 },
+          { "nume": "Faina", "gramaj": 150 },
+          { "nume": "Cacao", "gramaj": 10 }
+        ]
+      }
+    ]
+  }
+]

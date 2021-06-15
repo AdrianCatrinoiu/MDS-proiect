@@ -15,3 +15,7 @@ Features:
 Diagrama USE CASE VIEW:
 
 ![image](https://user-images.githubusercontent.com/58784210/121648137-d65d9480-ca9f-11eb-8d0d-8beffcea8421.png)
+
+Link catre board-ul de trello: https://trello.com/b/L1SpN93Q/mds
+
+Link catre demo: https://www.youtube.com/watch?v=GlWIml-xsNE
